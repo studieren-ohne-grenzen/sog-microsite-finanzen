@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<p><strong>Liebes Mitglied,</strong></p>
+<p>diese Seite bietet Dir einen Einblick in die diesjährige Finanzsituation von Studieren Ohne Grenzen. Aus dem Schaubild kannst Du für jeden Monat die Einahmen, die Ausgaben und den Saldo ablesen. <strong>Achtung:</strong> Für die mit (t) gekennzeichneten Monate handelt es sich dabei um tatsächliche Werte, für die mit (P) gekennzeichneten Monate um Prognosen, die im Laufe des Jahres ersetzt werden:</p>
+
+<iframe src="https://docs.google.com/spreadsheets/d/1tVx0lv0mAeZNGCkmnaMqYfPOdGe0Vp3DMzlyNSTodN8/pubchart?oid=228669519&format=interactive" scrolling="no"></iframe>
+
+<p>Aus den monatlichen Werten ergibt sich die folgende <strong>Prognose für das Gesamtjahr</strong>. Auch hier steht <span id="revenueKey"></span> für Einnahmen, <span id="expenditureKey"></span> für Ausgaben und <span id="balanceKey"></span> für den Saldo. Der schwarze Strich kennzeichnet den Ursprung:</p>
+
+<div id="total">
+  <div id="revenueBar"></div>
+  <div id="revenueMarker"></div>
+  <div id="revenueLabel"></div>
+
+  <div id="expenditureBar"></div>
+  <div id="expenditureMarker"></div>
+  <div id="expenditureLabel"></div>
+
+  <div id="balanceBar"></div>
+  <div id="balanceMarker"></div>
+  <div id="balanceLabel"></div>
+
+  <div id="zeroMarker"></div>
+  <!-- <div id="zeroLabel">0 €</div> -->
+</div>
+
+<script src="{{ "/js/papaparse.min.js" | prepend: site.baseurl }}"></script>

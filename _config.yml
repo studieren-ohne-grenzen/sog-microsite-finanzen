@@ -1,0 +1,7 @@
+# Site settings
+title: Finanzüberblick
+url: "https://www.studieren-ohne-grenzen.org"
+baseurl: "/finanzen"
+
+exclude: [ upload-to-server.sh,
+           update-template.sh ]
